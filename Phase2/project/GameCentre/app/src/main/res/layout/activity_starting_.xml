@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    tools:context="fall2018.csc2017.slidingtiles.StartingActivity">
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Sliding Tiles                   "
+        android:textAlignment="center"
+        android:textColor="@color/lightorangeDark"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="124dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/GameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-98dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Start Game"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/scoreboardButton"
+        android:layout_width="134dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/GameText"
+        android:layout_alignStart="@+id/SaveButton"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="121dp"
+        android:background="@drawable/buttonstyle"
+        android:text="SCOREBOARD"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/Signout"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="143dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="561dp"
+        android:layout_marginEnd="-23dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:text="Signout"
+        android:textSize="19sp"/>
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="120dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/GameText"
+        android:layout_marginStart="-123dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/StartButton"
+        android:background="@drawable/buttonstyle"
+        android:text="Save Game"
+        android:visibility="visible"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/SETTING"
+        android:layout_width="123dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="149dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Setting"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/backTwo"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="154dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="561dp"
+        android:layout_marginEnd="-245dp"
+        android:layout_toStartOf="@+id/scoreboardButton"
+        android:text="Back"
+        android:textSize="19sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="216dp"
+        android:layout_height="114dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        app:srcCompat="@drawable/sliding_tiles" />
+
+</RelativeLayout>

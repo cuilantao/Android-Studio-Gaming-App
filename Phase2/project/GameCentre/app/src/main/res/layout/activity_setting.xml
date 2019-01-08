@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/undoStep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients">
+
+
+    <Button
+        android:id="@+id/EXIT"
+        android:layout_width="117dp"
+        android:layout_height="62dp"
+        android:background="@drawable/buttonstyle"
+        android:text="BACK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/EASY"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Easy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/MEDIUM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/MEDIUM"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:background="@drawable/buttonstyle"
+        android:text="MEDIUM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/HARD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EASY"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/HARD"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:background="@drawable/buttonstyle"
+        android:text="HARD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/undoStp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MEDIUM"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/undoSetP"
+        android:layout_width="60dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/undoStp"
+        android:layout_width="181dp"
+        android:layout_height="65dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Change Undo Steps Here"
+        android:textAlignment="center"
+        android:textColor="@color/lightorangeDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/EXIT"
+        app:layout_constraintEnd_toStartOf="@+id/undoSetP"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/undoSetM"
+        app:layout_constraintTop_toBottomOf="@+id/HARD" />
+
+    <Button
+        android:id="@+id/undoSetM"
+        android:layout_width="60dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/buttonstyle"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    " />
+</android.support.constraint.ConstraintLayout>

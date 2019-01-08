@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fall2018.csc2017.game2048.StartingActivity2048">
+
+    <ImageView
+        android:id="@+id/background_1"
+        android:layout_width="fill_parent"
+        android:layout_height="659dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/new_login_gradients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/scoreboardButton"
+        android:layout_width="164dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/GameText"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonstyle"
+        android:text="SCOREBOARD"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/Signout"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toEndOf="@+id/background_1" />
+
+    <Button
+        android:id="@+id/Signout"
+        android:layout_width="153dp"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:layout_toStartOf="@+id/StartButton"
+        android:background="@drawable/buttonstyle"
+        android:text="Signout"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/background_1" />
+
+    <Button
+        android:id="@+id/backTwo"
+        android:layout_width="153dp"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/scoreboardButton"
+        android:background="@drawable/buttonstyle"
+        android:text="Back"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/background_1"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toBottomOf="@+id/background_1"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/undoStp"
+        android:layout_width="164dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Undo Steps"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toBottomOf="@+id/StartButton" />
+
+    <Button
+        android:id="@+id/undoSetM"
+        android:layout_width="55dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/buttonstyle"
+        android:text="-"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/undoStp"
+        app:layout_constraintTop_toBottomOf="@+id/StartButton" />
+
+    <Button
+        android:id="@+id/undoSetP"
+        android:layout_width="51dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/buttonstyle"
+        android:text="+"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/undoStp"
+        app:layout_constraintTop_toBottomOf="@+id/StartButton" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="174dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/GameText"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonstyle"
+        android:text="Start Game"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="161dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_1"
+        app:layout_constraintEnd_toStartOf="@+id/background_1"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_1"
+        app:layout_constraintVertical_bias="0.849"
+        app:srcCompat="@drawable/twoooo" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="91dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toBottomOf="@+id/background_1"
+        app:layout_constraintVertical_bias="0.852"
+        app:srcCompat="@drawable/zero" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="161dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_1"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toBottomOf="@+id/background_1"
+        app:layout_constraintVertical_bias="0.849"
+        app:srcCompat="@drawable/four" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="161dp"
+        android:layout_height="93dp"
+        app:layout_constraintBottom_toTopOf="@+id/background_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toEndOf="@+id/background_1"
+        app:layout_constraintTop_toBottomOf="@+id/background_1"
+        app:layout_constraintVertical_bias="0.849"
+        app:srcCompat="@drawable/eight" />
+
+</android.support.constraint.ConstraintLayout>

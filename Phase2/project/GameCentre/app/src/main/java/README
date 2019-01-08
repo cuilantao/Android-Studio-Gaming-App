@@ -1,0 +1,44 @@
+# Cloning Game
+* Open AndroidStudio - New - Project from Version Control - Git - URL: https://markus.teach.cs.toronto.edu/git/csc207-2018-09-reg/group_0629
+* Click Yes when asked "Create a new AndroidStudio Project" - Select "Import project from external model" - Add "Phase2/GameCenter" to the Gradle project path 
+* You may see "Unregistered VCS root detected", Click Add root
+* Then Create Android Virtual Device - Select Pixel2 as device - Select OS as Android 8.1 API27
+* Launch the device and Click Run - Run 'app'
+**  Cite: From Paul Gries' announcement
+
+# Running Game
+* First time entering the game: You need to create an account using a valid email and a valid password. A valid email is a string with "@" in it. A valid password is a string with at least 4 characters. After entering your email and password, click sign-up to create an account. (Please don't use the 'enter' key on your keyboard, otherwise you will be trapped in the loading interface.) If it's the first time you play the game, you will be redirected to welcome screen. Click "Start your journey now" to enter the game choosing screen.
+* If you already have an account, enter your email and password, then click login. You will be redirected to game choosing screen.(Please don't use the 'enter' key on your keyboard, otherwise you will be trapped in the loading interface.)
+
+# Game Choosing
+* You can choose one of the three available games to play in game choosing screen: sliding tiles, mine sweeper and 2048. Click on the first image to play sliding tiles. Click on the second image to play mine sweeper. Click on the third image to play 2048.
+
+# Sliding Tiles
+* This is a puzzle game that the goal is to successfully orders the tiles, with the blank tile at the bottom right. For more detail please visit https://en.wikipedia.org/wiki/Sliding_puzzle
+* To start, click the start game button. If you want to start a new game, click on the 'START GAME' button, then you will see an option dialog. If you want to load your saved game, click the 'LOAD' button. If you want to load your auto-saved game, click on 'RESUME' button.
+* Usually sliding tile games can produce unsolvable board, but our game won't.
+* To change the difficulty of the game, or the undo step, Click "Setting"
+* To save the current game, Click "Save Game" (This is manual save, it's different from auto save, which will save the game every time the tiles has changed.)
+* If you want to check your current highest score, Click on "Scoreboard".
+* If you want to play a different game, Click "Back" to return to the game selection page.
+* If you want to log out from current account, Click on "Sign out".
+
+# 2048
+* I assume you know how to play this game. If not, then check this out https://en.wikipedia.org/wiki/2048_(video_game).
+* If you want to start a new game or resume previous auto save game or load manual game, Click "New Game" button, you will see an Option dialog, choose 'NEW GAME' to start new game, choose 'RESUME' to load the auto-saved game, choose 'LOAD' to load your manually saved game (there is also a 'LOAD' button in the game.)
+* Don't click on the place outside the dialog, otherwise you can't start the game...
+* If you want to go back to the previous steps, click on 'Undo' button. The default undo step is 3, if you want to change the undo step, Click '+' or '-' in the game menu.
+* If you want to save the game, click the save button on the bottom right when you are playing the game. To load the game you saved, click the load button on the button left when you are playing the game.
+* You can get a score in the scoreboard only if you end a game(i.e. game over), you can play again after the game is over.
+* If you want to check your current highest score(local or global), Click on "Scoreboard" button.
+* If you want to log out current account, Click on "Sign out" button in the game menu.
+* If you want to play another game, Click "Back" to return to the game selection page.
+
+# Minesweeper
+* I assume you know how to play this game. If not, then check this out https://en.wikipedia.org/wiki/Minesweeper_(video_game).
+* If you want to start a new game, Click on "NEW GAME" button.
+* After you won a game, if the game doesn't promote text "You win", you need to click the screen once to win the game. (this happens when you flag the last grid to win the game)
+* If you want to change complexity, Click on "Setting" button in the game menu.
+* If you want to check your current highest score(local or global), Click on "Scoreboard" button.
+* If you want to log out current account, Click on "Sign out" button.
+* If you want to play another game, Click "Back" to return to the game selection page.
